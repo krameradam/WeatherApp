@@ -34,21 +34,21 @@ const getWeather = () => {
             input.value = ''
 
             if (status.id < 300) {
-                photo.setAttribute('src', '../photos/thunderstorm.png')
+                photo.setAttribute('src', './photos/thunderstorm.png')
             } else if (status.id >= 300 && status.id < 500) {
-                photo.setAttribute('src', '../photos/drizzle.png')
+                photo.setAttribute('src', './photos/drizzle.png')
             } else if (status.id >= 500 && status.id < 600) {
-                photo.setAttribute('src', '../photos/rain.png')
+                photo.setAttribute('src', './photos/rain.png')
             } else if (status.id >= 600 && status.id < 700) {
-                photo.setAttribute('src', '../photos/ice.png')
+                photo.setAttribute('src', './photos/ice.png')
             } else if (status.id >= 700 && status.id < 800) {
-                photo.setAttribute('src', '../photos/fog.png')
+                photo.setAttribute('src', './photos/fog.png')
             } else if (status.id === 800) {
                 photo.setAttribute('src', './photos/sun.png')
             } else if (status.id > 800) {
-                photo.setAttribute('src', '../photos/cloud.png')
+                photo.setAttribute('src', './photos/cloud.png')
             } else {
-                photo.setAttribute('src', '../photos/unknown.png')
+                photo.setAttribute('src', './photos/unknown.png')
             }
         })
         .catch(() => warning.textContent = 'Wpisz poprawną nazwę miasta') //wyłapujemy błędy 
